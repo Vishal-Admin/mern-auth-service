@@ -7,5 +7,8 @@
     "dev": "node src/server.js"
   },
   "author": "Vishal p <vishalpanchal570@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
 }
