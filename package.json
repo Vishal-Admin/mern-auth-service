@@ -1,17 +1,22 @@
 {
-  "name": "auth-service",
-  "version": "1.0.0",
-  "description": "user managent system",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node src/server.js",
-    "pCheck": "prettier . --check",
-    "pFix": "prettier . --write"
-  },
-  "author": "Vishal p <vishalpanchal570@gmail.com>",
-  "license": "ISC",
-  "devDependencies": {
-    "prettier": "3.0.3",
-    "typescript": "^5.2.2"
-  }
+    "name": "auth-service",
+    "version": "1.0.0",
+    "description": "user managent system",
+    "main": "index.js",
+    "scripts": {
+        "dev": "node src/server.js",
+        "pCheck": "prettier . --check",
+        "pFix": "prettier . --write",
+        "lint": "eslint .",
+        "lintFix": "eslint . --fix"
+    },
+    "author": "Vishal p <vishalpanchal570@gmail.com>",
+    "license": "ISC",
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^6.7.3",
+        "@typescript-eslint/parser": "^6.7.3",
+        "eslint": "^8.50.0",
+        "prettier": "3.0.3",
+        "typescript": "^5.2.2"
+    }
 }
