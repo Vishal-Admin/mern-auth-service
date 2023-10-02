@@ -4,7 +4,7 @@
     "description": "user managent system",
     "main": "index.js",
     "scripts": {
-        "dev": "node src/server.js",
+        "dev": "nodemon src/server.ts",
         "pCheck": "prettier . --check",
         "pFix": "prettier . --write",
         "lint": "eslint .",
@@ -14,12 +14,15 @@
     "author": "Vishal p <vishalpanchal570@gmail.com>",
     "license": "ISC",
     "devDependencies": {
+        "@types/express": "^4.17.18",
+        "@types/node": "^20.8.0",
         "@typescript-eslint/eslint-plugin": "^6.7.3",
         "@typescript-eslint/parser": "^6.7.3",
         "eslint": "^8.50.0",
         "husky": "^8.0.3",
         "lint-staged": "^14.0.1",
         "prettier": "3.0.3",
+        "ts-node": "^10.9.1",
         "typescript": "^5.2.2"
     },
     "lint-staged": {
@@ -27,5 +30,9 @@
             "npm run lintFix",
             "npm run pFix"
         ]
+    },
+    "dependencies": {
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2"
     }
 }

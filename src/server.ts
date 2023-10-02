@@ -1,9 +1,17 @@
-function login(username: string): string {
-    const user = {
-        class: "mca",
-    };
-    const name = user.class;
-    return username + name;
-}
+import app from "./app";
+import { Config } from "./config";
 
-login("Vishal");
+const startServer = () => {
+    const PORT = Config.PORT;
+    try {
+        // eslint-disable-next-line no-console
+        app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+    } catch (error) {
+        // eslint-disable-next-line no-console
+        console.error(error);
+        process.exit(1);
+    }
+};
+
+startServer();
+// console.log("Port", Config.PORT)
