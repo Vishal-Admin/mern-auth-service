@@ -8,7 +8,8 @@
         "pCheck": "prettier . --check",
         "pFix": "prettier . --write",
         "lint": "eslint .",
-        "lintFix": "eslint . --fix"
+        "lintFix": "eslint . --fix",
+        "prepare": "husky install"
     },
     "author": "Vishal p <vishalpanchal570@gmail.com>",
     "license": "ISC",
@@ -16,6 +17,7 @@
         "@typescript-eslint/eslint-plugin": "^6.7.3",
         "@typescript-eslint/parser": "^6.7.3",
         "eslint": "^8.50.0",
+        "husky": "^8.0.3",
         "prettier": "3.0.3",
         "typescript": "^5.2.2"
     }
