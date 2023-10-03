@@ -17,4 +17,3 @@ const startServer = () => {
 };
 
 startServer();
-// console.log("Port", Config.PORT)
